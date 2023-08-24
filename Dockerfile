@@ -3,4 +3,4 @@ COPY . /Project_Freight_cost_prediction
 WORKDIR /Project_Freight_cost_prediction
 RUN pip install -r requirements.txt
 EXPOSE $PORT
-CMD python app.py 
+CMD gunicorn --bind 0.0.0.0:$PORT app:Project_Freight_cost_prediction
