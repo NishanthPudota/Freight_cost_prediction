@@ -4,7 +4,6 @@ on:
   push:
     branches: [ main ]
     paths-ignore: [ README.md ]
-    #if: ${{ github.sha == 'your_commit_sha' }}
 
   pull_request:
     branches: [ main ]
